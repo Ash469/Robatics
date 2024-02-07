@@ -27,7 +27,7 @@ def display_lines(frame,lines):
           cv2.line(line_frame,(x1,y1),(x2,y2),(0,255,0),10)
     return line_frame
 
-cap = cv2.VideoCapture("C:/Users/ASUS/Downloads/Video1.mp4")
+cap = cv2.VideoCapture("C:/Users/ASUS/Downloads/Video1.mp4")     #path of video
 while(cap. isOpened()):
     _, frame = cap.read()
     lane_frame = np.copy(frame)
